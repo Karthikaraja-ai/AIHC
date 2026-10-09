@@ -1,0 +1,1873 @@
+[
+  {
+    "category": "HEADACHE",
+    "matchKeywords": [
+      "headache",
+      "head ache",
+      "migraine",
+      "head heaviness",
+      "forehead pain",
+      "தலைவலி",
+      "தலைக்கனம்",
+      "ஒற்றைத் தலைவலி",
+      "நெற்றி வலி",
+      "सिर दर्द",
+      "माइग्रेन",
+      "माथे का दर्द",
+      "सिर में भारीपन"
+    ],
+    "questions": [
+      {
+        "id": "Q_HEADACHE_LOCATION",
+        "questionNumber": 2,
+        "totalEstimatedQuestions": 5,
+        "category": "BODY_LOCATION",
+        "text": {
+          "en": "Where exactly on your head do you feel the pain or pressure?",
+          "ta": "தலையில் குறிப்பாக எந்தப் பகுதியில் வலி அல்லது பாரம் உள்ளது?",
+          "hi": "आपके सिर में विशेष रूप से किस स्थान पर दर्द या दबाव है?"
+        },
+        "audioPromptText": {
+          "en": "Where is the headache? Forehead, temples, one side of the head, or the back of your head?",
+          "ta": "தலைவலி எங்கு உள்ளது? நெற்றி, பக்கவாட்டு பொட்டு, ஒரு பகுதி மட்டும், அல்லது தலைக்கு பின்பக்கமா?",
+          "hi": "सिर दर्द कहां है? माथे पर, कनपटी पर, केवल एक तरफ, या सिर के पिछले हिस्से में?"
+        },
+        "inputType": "CHOICE_CARDS",
+        "options": [
+          {
+            "id": "hemi_cranial_one_sided",
+            "label": {
+              "en": "Strictly One-Sided (Hemi-cranial / Migraine pattern)",
+              "ta": "ஒரு பக்கத்தில் மட்டும் (ஒற்றைத் தலைவலி / மைக்ரேன்)",
+              "hi": "केवल एक तरफ (आधा सीसी / माइग्रेन)"
+            },
+            "subLabel": {
+              "en": "Typical of vascular migraine or cluster presentation",
+              "ta": "மைக்ரேன் மற்றும் நரம்பு சார்ந்த வலி",
+              "hi": "माइग्रेन का विशेष लक्षण"
+            },
+            "icon": "Brain",
+            "contextTag": "migraine_pattern"
+          },
+          {
+            "id": "frontal_forehead",
+            "label": {
+              "en": "Frontal / Forehead & Above Eyes (Sinus / Tension)",
+              "ta": "முன் நெற்றி & கண்களுக்கு மேல் (சைனஸ் / அழுத்தம்)",
+              "hi": "माथे पर एवं आंखों के ऊपर (साइनस / तनाव)"
+            },
+            "subLabel": {
+              "en": "Common in frontal sinusitis, eye strain, or tension",
+              "ta": "சைனஸ் சளி அல்லது கண் சோர்வு",
+              "hi": "साइनस या आंखों पर खिंचाव"
+            },
+            "icon": "Activity",
+            "contextTag": "frontal_tension"
+          },
+          {
+            "id": "temporal_both_sides",
+            "label": {
+              "en": "Both Temples (Throbbing side-of-head pain)",
+              "ta": "இரு பொட்டுப் பகுதி (துடிக்கும் பக்கவாட்டு வலி)",
+              "hi": "दोनों कनपटियों पर (धड़कता हुआ दर्द)"
+            },
+            "subLabel": {
+              "en": "Temporal throbbing or stress-induced contraction",
+              "ta": "அழுத்தம் மற்றும் துடிப்பு வலி",
+              "hi": "तनाव जनित खिंचाव"
+            },
+            "icon": "Activity",
+            "contextTag": "temporal_ache"
+          },
+          {
+            "id": "occipital_back_neck",
+            "label": {
+              "en": "Back of Head & Upper Neck (Occipital / Cervical)",
+              "ta": "பின் தலை மற்றும் பிடரி / கழுத்துப் பகுதி",
+              "hi": "सिर के पीछे एवं गर्दन के ऊपरी हिस्से में"
+            },
+            "subLabel": {
+              "en": "Cervical spondylosis, neck muscle spasm, or BP spike",
+              "ta": "கழுத்து எலும்பு தேய்மானம் அல்லது ரத்த அழுத்தம்",
+              "hi": "गर्दन का तनाव या सर्वाइकल"
+            },
+            "icon": "User",
+            "contextTag": "occipital_cervical"
+          }
+        ]
+      },
+      {
+        "id": "Q_HEADACHE_ONSET_TIMING",
+        "questionNumber": 3,
+        "totalEstimatedQuestions": 5,
+        "category": "CHARACTER",
+        "text": {
+          "en": "When does the headache usually start, and how did it begin?",
+          "ta": "தலைவலி வழக்கமாக எப்போது தொடங்குகிறது? அது எவ்வாறு ஆரம்பித்தது?",
+          "hi": "सिर दर्द आमतौर पर कब शुरू होता है और इसकी शुरुआत कैसे हुई?"
+        },
+        "audioPromptText": {
+          "en": "Does it start upon waking in the morning, gradually in the evening, or suddenly like a thunderclap?",
+          "ta": "காலையில் எழுந்தவுடன் வலிக்கிறதா, மாலையில் படிப்படியாக கூடுகிறதா, அல்லது திடீரென வெடித்தா?",
+          "hi": "क्या सुबह उठते ही होता है, शाम को बढ़ता है, या अचानक तीव्र दर्द हुआ?"
+        },
+        "inputType": "CHOICE_CARDS",
+        "options": [
+          {
+            "id": "waking_morning",
+            "label": {
+              "en": "Present immediately upon waking up in the morning",
+              "ta": "காலையில் எழுந்த உடனே ஆரம்பிக்கிறது",
+              "hi": "सुबह सोकर उठते ही शुरू हो जाता है"
+            },
+            "subLabel": {
+              "en": "May relate to sleep apnea, sinusitis, or nighttime bruxism",
+              "ta": "தூக்கமின்மை அல்லது சைனஸ் சளி",
+              "hi": "साइनस या अधूरी नींद से संबंधित"
+            },
+            "icon": "Clock",
+            "contextTag": "morning_onset"
+          },
+          {
+            "id": "gradual_end_of_day",
+            "label": {
+              "en": "Builds up gradually towards the afternoon or evening",
+              "ta": "பகலில் மெதுவாக ஆரம்பித்து மாலையில் கூடுகிறது",
+              "hi": "दिनभर में धीरे-धीरे बढ़ता है और शाम को तेज होता है"
+            },
+            "subLabel": {
+              "en": "Classic tension headache from fatigue, screen glare, or stress",
+              "ta": "பணிச் சுமை, கணினி பயன்பாடு மற்றும் மன அழுத்தம்",
+              "hi": "थकान, स्क्रीन का काम और तनाव"
+            },
+            "icon": "Compass",
+            "contextTag": "evening_tension"
+          },
+          {
+            "id": "sudden_explosive_thunderclap",
+            "label": {
+              "en": "Sudden, explosive severe onset (Thunderclap — worst ever)",
+              "ta": "திடீரென மின்னல் வெட்டியது போல தாங்க முடியாத தீவிர வலி",
+              "hi": "अचानक तीव्र विस्फोट जैसा असहनीय दर्द (बिजली कड़कने जैसा)"
+            },
+            "subLabel": {
+              "en": "Critical red flag requiring immediate physician evaluation",
+              "ta": "உடனடி மருத்துவ கவனிப்பு தேவைப்படும் ஆபத்தான அறிகுறி",
+              "hi": "तत्काल डॉक्टर को दिखाने योग्य लक्षण"
+            },
+            "icon": "AlertCircle",
+            "isEmergencyTrigger": true,
+            "contextTag": "thunderclap_redflag"
+          },
+          {
+            "id": "intermittent_episodes",
+            "label": {
+              "en": "Comes in episodic attacks lasting 4 to 72 hours",
+              "ta": "விட்டு விட்டு சில மணி நேரங்கள் அல்லது நாட்கள் நீடிக்கிறது",
+              "hi": "रुक-रुक कर दौरों के रूप में कुछ घंटों से दिनों तक रहता है"
+            },
+            "subLabel": {
+              "en": "Characteristic periodic migraine cycle",
+              "ta": "சுழற்சி முறையில் வரும் தலைவலி",
+              "hi": "आवर्ती माइग्रेन चक्र"
+            },
+            "icon": "Activity",
+            "contextTag": "episodic_migraine"
+          }
+        ]
+      },
+      {
+        "id": "Q_HEADACHE_CHARACTER",
+        "questionNumber": 4,
+        "totalEstimatedQuestions": 5,
+        "category": "CHARACTER",
+        "text": {
+          "en": "What is the nature of the headache sensation?",
+          "ta": "தலைவலியின் உணர்வுத் தன்மை எவ்வாறு உள்ளது?",
+          "hi": "सिर दर्द किस प्रकार का महसूस होता है?"
+        },
+        "audioPromptText": {
+          "en": "Is it throbbing with heartbeat, tight band-like squeezing, or sharp stabbing behind the eyes?",
+          "ta": "நாடித் துடிப்பு போல துடிக்கிறதா, கயிறு கட்டி இறுக்குவது போல உள்ளதா, அல்லது கூர்மையாக குத்துகிறதா?",
+          "hi": "क्या दर्द नब्ज की तरह धड़कता है, पट्टी की तरह जकड़न है, या आंख के पीछे तेज चुभन है?"
+        },
+        "inputType": "CHOICE_CARDS",
+        "options": [
+          {
+            "id": "throbbing_pulsating",
+            "label": {
+              "en": "Throbbing / Pulsating (Beats in time with pulse)",
+              "ta": "நாடித் துடிப்பு போல துடிக்கும் வலி",
+              "hi": "नब्ज की तरह धड़कने वाला दर्द"
+            },
+            "subLabel": {
+              "en": "Vascular pain typical of migraine or high BP",
+              "ta": "ரத்தக்குழாய் விரிவு மற்றும் பித்த தலைவலி",
+              "hi": "माइग्रेन का प्रमुख प्रकार"
+            },
+            "icon": "Activity",
+            "contextTag": "throbbing"
+          },
+          {
+            "id": "band_like_squeezing",
+            "label": {
+              "en": "Dull, tight band-like pressure squeezing the head",
+              "ta": "தலையை சுற்றிலும் கயிறால் இறுக்குவது போன்ற பாரம்",
+              "hi": "सिर पर पट्टी बांधकर कसने जैसा भारी दबाव"
+            },
+            "subLabel": {
+              "en": "Myofascial tension contraction",
+              "ta": "தசை இறுக்கம் மற்றும் மன உளைச்சல்",
+              "hi": "मांसपेशियों का खिंचाव"
+            },
+            "icon": "User",
+            "contextTag": "band_tightness"
+          },
+          {
+            "id": "sharp_piercing_eye",
+            "label": {
+              "en": "Sharp, piercing or stabbing pain centered behind eye",
+              "ta": "கண்ணுக்கு பின்னால் கூர்மையாக ஊசி குத்தும் வலி",
+              "hi": "आंख के पीछे तेज चुभने या सूई जैसी चुभन"
+            },
+            "subLabel": {
+              "en": "Trigeminal nerve or cluster headache feature",
+              "ta": "கண் நரம்பு சார்ந்த தீவிர வலி",
+              "hi": "नस का तेज खिंचाव"
+            },
+            "icon": "AlertCircle",
+            "contextTag": "sharp_periorbital"
+          }
+        ]
+      },
+      {
+        "id": "Q_HEADACHE_TRIGGERS",
+        "questionNumber": 5,
+        "totalEstimatedQuestions": 5,
+        "category": "TRIGGERS",
+        "text": {
+          "en": "Which of the following triggers make your headache noticeably worse?",
+          "ta": "பின்வருவனவற்றில் எவை உங்கள் தலைவலியை அதிகப்படுத்துகின்றன?",
+          "hi": "इनमें से किन कारणों से आपका सिर दर्द काफी बढ़ जाता है?"
+        },
+        "audioPromptText": {
+          "en": "Do screens, bright lights, loud noise, lack of sleep, or skipping meals make it worse?",
+          "ta": "கணினி/மொபைல் திரை, வெளிச்சம், சத்தம், தூக்கமின்மை அல்லது பட்டினி வலியை கூட்டுகிறதா?",
+          "hi": "क्या स्क्रीन, तेज रोशनी, शोर, नींद की कमी या भूखा रहने से दर्द बढ़ता है?"
+        },
+        "inputType": "CHOICE_CARDS",
+        "options": [
+          {
+            "id": "screen_digital_strain",
+            "label": {
+              "en": "Prolonged Mobile / Computer screen glare & eye strain",
+              "ta": "அதிக மொபைல் / கணினி திரை வெளிச்சம் மற்றும் கண் சோர்வு",
+              "hi": "लंबे समय तक मोबाइल / कंप्यूटर स्क्रीन देखना"
+            },
+            "subLabel": {
+              "en": "Digital eye strain and postural neck flexion",
+              "ta": "டிஜிட்டல் கண் அயர்வு",
+              "hi": "आंखों का तनाव"
+            },
+            "icon": "Activity",
+            "contextTag": "screen_trigger"
+          },
+          {
+            "id": "photophobia_phonophobia",
+            "label": {
+              "en": "Bright sunlight, loud sound & need to lie in a dark quiet room",
+              "ta": "அதிக வெளிச்சம், சத்தம் தாங்க இயலாமை; இருட்டறை தேவை",
+              "hi": "तेज धूप, रोशनी व शोर बर्दाश्त न होना; अंधेरे कमरे की जरूरत"
+            },
+            "subLabel": {
+              "en": "Definitive migraine photophobia / phonophobia triad",
+              "ta": "ஒளி/ஒலி சகிப்பின்மை அறிகுறி",
+              "hi": "माइग्रेन का संवेदी लक्षण"
+            },
+            "icon": "Wind",
+            "contextTag": "photophobia"
+          },
+          {
+            "id": "stress_sleep_loss",
+            "label": {
+              "en": "Mental stress, lack of sleep, or skipping regular meals",
+              "ta": "மன அழுத்தம், போதிய தூக்கமின்மை அல்லது உணவு தவறவிடுதல்",
+              "hi": "मानसिक तनाव, नींद की कमी या समय पर खाना न खाना"
+            },
+            "subLabel": {
+              "en": "Neuro-endocrine and hypoglycemic trigger",
+              "ta": "வளர்சிதை மாற்ற தூண்டுதல்",
+              "hi": "शारीरिक असंतुलन"
+            },
+            "icon": "Clock",
+            "contextTag": "lifestyle_trigger"
+          },
+          {
+            "id": "no_specific_trigger",
+            "label": {
+              "en": "No obvious external triggers noticed",
+              "ta": "குறிப்பிட்ட தூண்டுதல்கள் எதுவும் தெரியவில்லை",
+              "hi": "कोई विशेष कारण समझ नहीं आता"
+            },
+            "subLabel": {
+              "en": "Spontaneous or continuous discomfort",
+              "ta": "இயல்பாக தோன்றும் தலைவலி",
+              "hi": "लगातार रहने वाला"
+            },
+            "icon": "Compass",
+            "contextTag": "spontaneous"
+          }
+        ]
+      },
+      {
+        "id": "Q_HEADACHE_RED_FLAGS",
+        "questionNumber": 6,
+        "totalEstimatedQuestions": 6,
+        "category": "ASSOCIATED",
+        "text": {
+          "en": "Safety Screening: Do you have any of these associated warning signs?",
+          "ta": "பாதுகாப்பு பரிசோதனை: பின்வரும் எச்சரிக்கை அறிகுறிகளில் ஏதேனும் உள்ளதா?",
+          "hi": "सुरक्षा जांच: क्या आपको इनमें से कोई चेतावनी लक्षण भी महसूस हो रहा है?"
+        },
+        "audioPromptText": {
+          "en": "Do you have visual blind spots, neck stiffness with fever, or weakness on one side of your body?",
+          "ta": "பார்வை மங்குதல், காய்ச்சலுடன் கழுத்து விரைப்பு, அல்லது ஒரு பக்க பலவீனம் உள்ளதா?",
+          "hi": "क्या देखने में दिक्कत, बुखार के साथ गर्दन में अकड़न, या चेहरे/हाथ में कमजोरी है?"
+        },
+        "inputType": "CHOICE_CARDS",
+        "options": [
+          {
+            "id": "visual_aura_spots",
+            "label": {
+              "en": "Visual aura (Flashing zigzag lights, blind spots, blurred vision)",
+              "ta": "பார்வையில் மின்னல் கீற்று, குருட்டுப் புள்ளி அல்லது மங்குதல்",
+              "hi": "आंखों के आगे चमकती रोशनी, अंधापन या धुंधलापन (ऑरा)"
+            },
+            "subLabel": {
+              "en": "Classic sensory aura preceding migraine",
+              "ta": "பார்வை நரம்பு ஒளி மாற்றம்",
+              "hi": "माइग्रेन ऑरा का लक्षण"
+            },
+            "icon": "AlertCircle",
+            "contextTag": "visual_aura"
+          },
+          {
+            "id": "stiff_neck_fever",
+            "label": {
+              "en": "Neck stiffness preventing chin-to-chest + high fever",
+              "ta": "கழுத்து விரைப்பு (தாடையை மார்பில் தொட இயலாமை) & காய்ச்சல்",
+              "hi": "गर्दन में तेज अकड़न (ठोड़ी सीने से न लगना) एवं तेज बुखार"
+            },
+            "subLabel": {
+              "en": "Critical sign: Meningeal irritation requiring immediate ER review",
+              "ta": "உடனடி மருத்துவமனைக்கு செல்ல வேண்டிய தீவிர மூளைச்சவ்வு அழற்சி",
+              "hi": "गंभीर संक्रमण का संकेत - तत्काल डॉक्टर से मिलें"
+            },
+            "icon": "AlertCircle",
+            "isEmergencyTrigger": true,
+            "contextTag": "meningism_redflag"
+          },
+          {
+            "id": "nausea_vomiting_only",
+            "label": {
+              "en": "Nausea or vomiting accompanying the headache",
+              "ta": "தலைவலியுடன் குமட்டல் அல்லது வாந்தி மட்டும்",
+              "hi": "सिर दर्द के साथ केवल जी मिचलाना या उल्टी"
+            },
+            "subLabel": {
+              "en": "Common autonomic accompaniment of acute migraine",
+              "ta": "அமிலத்தன்மை மற்றும் வாந்தி உணர்வு",
+              "hi": "माइग्रेन में सामान्य"
+            },
+            "icon": "Activity",
+            "contextTag": "nausea_vomiting"
+          },
+          {
+            "id": "none_of_above_clean",
+            "label": {
+              "en": "None of these warning signs (Isolated headache only)",
+              "ta": "மேற்கூறிய எச்சரிக்கை அறிகுறிகள் எதுவும் இல்லை (தலைவலி மட்டுமே)",
+              "hi": "इनमें से कोई गंभीर लक्षण नहीं (केवल सिर दर्द है)"
+            },
+            "subLabel": {
+              "en": "No acute neurological deficit",
+              "ta": "பாதுகாப்பான நிலை",
+              "hi": "सुरक्षित सामान्य स्थिति"
+            },
+            "icon": "Check",
+            "contextTag": "isolated_headache"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "ABDOMINAL_PAIN",
+    "matchKeywords": [
+      "stomach",
+      "gastric",
+      "abdomen",
+      "belly",
+      "acidity",
+      "indigestion",
+      "bloating",
+      "வயிற்று",
+      "வயிறு",
+      "அசிடிட்டி",
+      "நெஞ்செரிச்சல்",
+      "அஜீரணம்",
+      "வாயு",
+      "पेट",
+      "पेट दर्द",
+      "एसिडिटी",
+      "गैस",
+      "अपच",
+      "जलन"
+    ],
+    "questions": [
+      {
+        "id": "Q_ABDOMEN_SPECIFIC_LOCATION",
+        "questionNumber": 2,
+        "totalEstimatedQuestions": 5,
+        "category": "BODY_LOCATION",
+        "text": {
+          "en": "Where exactly in your abdomen is the pain focused?",
+          "ta": "வயிற்றில் குறிப்பாக எந்தப் பகுதியில் வலி மையமாக உள்ளது?",
+          "hi": "पेट में विशेष रूप से किस स्थान पर दर्द केंद्रित है?"
+        },
+        "audioPromptText": {
+          "en": "Is the pain in your upper stomach pit, right upper side under ribs, lower right near groin, or around your navel?",
+          "ta": "மேல் நெஞ்சுக் கூட்டுப் பகுதி, வலது விலா எலும்புக்கு கீழ், அடிவயிறு வலது பக்கம், அல்லது தொப்புள் பகுதியா?",
+          "hi": "क्या दर्द ऊपरी पेट में है, पसलियों के नीचे दाईं ओर, निचले पेट में दाईं ओर, या नाभि के पास?"
+        },
+        "inputType": "CHOICE_CARDS",
+        "options": [
+          {
+            "id": "epigastric_upper",
+            "label": {
+              "en": "Upper Abdomen / Epigastrium (Just below breastbone)",
+              "ta": "மேல் வயிறு / நெஞ்சுக் கூட்டுக்கு கீழ் பகுதி",
+              "hi": "ऊपरी पेट (सीने की हड्डी के ठीक नीचे / अमाशय)"
+            },
+            "subLabel": {
+              "en": "Classic site for gastritis, acid reflux, and peptic ulcer",
+              "ta": "அசிடிட்டி, நெஞ்செரிச்சல் மற்றும் இரைப்பை புண்",
+              "hi": "गैस्ट्राइटिस एवं एसिडिटी का मुख्य स्थान"
+            },
+            "icon": "Activity",
+            "contextTag": "epigastric"
+          },
+          {
+            "id": "ruq_right_ribs",
+            "label": {
+              "en": "Right Upper Quadrant (Beneath right ribcage)",
+              "ta": "வலது பக்க விலா எலும்புக்கு கீழ் (பித்தப்பை பகுதி)",
+              "hi": "दाईं पसलियों के ठीक नीचे (पित्ताशय क्षेत्र)"
+            },
+            "subLabel": {
+              "en": "Common site for gallbladder colic or liver inflammation",
+              "ta": "பித்தப்பை கல் அல்லது கல்லீரல் அசௌகரியம்",
+              "hi": "पित्त की पथरी या लीवर की परेशानी"
+            },
+            "icon": "Compass",
+            "contextTag": "ruq_gallbladder"
+          },
+          {
+            "id": "rlq_right_lower",
+            "label": {
+              "en": "Right Lower Abdomen (Sharp localized pain near groin)",
+              "ta": "அடிவயிறு வலது பகுதி (இடுப்புக்கு மேல் கூர்மையான வலி)",
+              "hi": "निचला दायां पेट (अपेंडिक्स का सामान्य क्षेत्र)"
+            },
+            "subLabel": {
+              "en": "Important: Suspected Acute Appendicitis trigger",
+              "ta": "முக்கியம்: அப்பெண்டிக்ஸ் அழற்சி அறிகுறியாக இருக்கலாம்",
+              "hi": "अपेंडिसाइटिस का संभावित संकेत"
+            },
+            "icon": "AlertCircle",
+            "isEmergencyTrigger": true,
+            "contextTag": "appendicitis_risk"
+          },
+          {
+            "id": "periumbilical_diffuse",
+            "label": {
+              "en": "Around Navel / Middle Stomach spreading diffusely",
+              "ta": "தொப்புளைச் சுற்றிய நடுப்பகுதி அல்லது பரவலான வலி",
+              "hi": "नाभि के चारों ओर या पूरे पेट में फैला दर्द"
+            },
+            "subLabel": {
+              "en": "Indigestion, gas distension, or enteritis spasms",
+              "ta": "செரியாமை, குடல் வாயு அல்லது குடல் பிடிப்பு",
+              "hi": "आंतों की गैस एवं ऐंठन"
+            },
+            "icon": "Activity",
+            "contextTag": "diffuse_umbilical"
+          }
+        ]
+      },
+      {
+        "id": "Q_ABDOMEN_MEAL_RELATION",
+        "questionNumber": 3,
+        "totalEstimatedQuestions": 5,
+        "category": "TRIGGERS",
+        "text": {
+          "en": "How is your stomach pain related to your food and meals?",
+          "ta": "உங்கள் வயிற்று வலி உணவு உண்பதுடன் எவ்வாறு தொடர்புடையது?",
+          "hi": "आपके पेट का दर्द भोजन और खाने से किस तरह जुड़ा हुआ है?"
+        },
+        "audioPromptText": {
+          "en": "Is the pain worse when your stomach is empty and relieved by food, or worse immediately after eating oily or spicy meals?",
+          "ta": "வெறும் வயிற்றில் வலி கூடி சாப்பிட்டால் குறைகிறதா, அல்லது உண்ட பின் அதிகமாகிறதா?",
+          "hi": "क्या खाली पेट दर्द ज्यादा होता है और खाने पर घटता है, या खाने के बाद दर्द बढ़ता है?"
+        },
+        "inputType": "CHOICE_CARDS",
+        "options": [
+          {
+            "id": "worse_empty_stomach_relieved_food",
+            "label": {
+              "en": "Worse when stomach is empty; clearly relieved after eating or milk",
+              "ta": "வெறும் வயிற்றில் அதிகம்; உணவு அல்லது பால் குடித்தால் வலி குறைகிறது",
+              "hi": "खाली पेट दर्द बढ़ता है; कुछ खाने या दूध पीने पर आराम मिलता है"
+            },
+            "subLabel": {
+              "en": "Classic duodenal ulcer / hyperchlorhydria pattern (Parinama Shula)",
+              "ta": "குடல் புண் மற்றும் அமில ஏற்ற அறிகுறி",
+              "hi": "अल्सर एवं अत्यधिक एसिडिटी का लक्षण"
+            },
+            "icon": "Clock",
+            "contextTag": "hunger_pain"
+          },
+          {
+            "id": "worse_immediately_after_eating",
+            "label": {
+              "en": "Worse immediately or 30-60 mins after eating (Spicy/oily foods)",
+              "ta": "சாப்பிட்ட உடனேயே அல்லது காரம் உண்ட பின் வலி அதிகமாகிறது",
+              "hi": "खाना खाने के तुरंत बाद या तीखा-तला खाने से बढ़ता है"
+            },
+            "subLabel": {
+              "en": "Gastric mucosa irritation, biliary colic, or pancreatitis",
+              "ta": "இரைப்பை அழற்சி மற்றும் பித்தப்பை அழுத்தம்",
+              "hi": "पेट की परत में सूजन या पित्त की समस्या"
+            },
+            "icon": "Activity",
+            "contextTag": "postprandial_pain"
+          },
+          {
+            "id": "severe_bloating_after_eating",
+            "label": {
+              "en": "Severe gas bloating & fullness even after small meals",
+              "ta": "சிறிது சாப்பிட்டாலும் கடுமையான வயிறு உப்புசம் & மந்தம்",
+              "hi": "थोड़ा खाने पर भी अत्यधिक गैस, पेट फूलना एवं भारीपन"
+            },
+            "subLabel": {
+              "en": "Sluggish digestive fire (Manda Agni / Dyspepsia)",
+              "ta": "அக்னி மந்தம் மற்றும் செரியாமை",
+              "hi": "अग्निमांद्य एवं अपच"
+            },
+            "icon": "Wind",
+            "contextTag": "early_satiety_bloat"
+          },
+          {
+            "id": "no_meal_correlation",
+            "label": {
+              "en": "No clear connection with meals (Constant ache)",
+              "ta": "உணவுக்கும் இந்த வலிக்கும் நேரடி தொடர்பில்லை",
+              "hi": "भोजन से कोई संबंध नहीं (लगातार बना रहता है)"
+            },
+            "subLabel": {
+              "en": "Continuous or non-luminal source",
+              "ta": "தொடர்ச்சியான உடல் வலி",
+              "hi": "लगातार दर्द"
+            },
+            "icon": "Compass",
+            "contextTag": "independent_food"
+          }
+        ]
+      },
+      {
+        "id": "Q_ABDOMEN_BOWEL_PATTERN",
+        "questionNumber": 4,
+        "totalEstimatedQuestions": 5,
+        "category": "AYUSH_MALA",
+        "text": {
+          "en": "What has been your bowel movement and stool pattern during this illness?",
+          "ta": "இந்த உபாதையின் போது உங்கள் மலம் கழிக்கும் பழக்கம் எவ்வாறு உள்ளது?",
+          "hi": "इस बीमारी के दौरान आपके पेट साफ होने और शौच का तरीका कैसा रहा है?"
+        },
+        "audioPromptText": {
+          "en": "Do you have hard dry constipation, loose watery stools, mucus or blood in stool, or normal bowels?",
+          "ta": "மலச்சிக்கலா, இளகிய நீர்த்த மலமா, மலத்தில் சளி அல்லது ரத்தம் உள்ளதா, அல்லது இயல்பானதா?",
+          "hi": "क्या कब्ज है, दस्त लग रहे हैं, शौच में खून या बलगम है, या पेट सामान्य साफ होता है?"
+        },
+        "inputType": "CHOICE_CARDS",
+        "options": [
+          {
+            "id": "constipation_straining_dry",
+            "label": {
+              "en": "Hard, dry stools with painful straining (Constipation / Vata)",
+              "ta": "வறண்ட கடின மலம், முக்கி வெளியேற்றுதல் (மலச்சிக்கல் / வாதம்)",
+              "hi": "सख्त सूखा मल एवं जोर लगाना (कब्ज / वात विकार)"
+            },
+            "subLabel": {
+              "en": "Colonic motility slowing, hard scybala",
+              "ta": "குடல் வறட்சி மற்றும் வாய்வு தேக்கம்",
+              "hi": "आंतों का सूखापन"
+            },
+            "icon": "Activity",
+            "contextTag": "constipation"
+          },
+          {
+            "id": "loose_frequent_diarrhea",
+            "label": {
+              "en": "Frequent watery or loose stools with cramps (Diarrhea / Gastroenteritis)",
+              "ta": "அடிக்கடி நீர்த்த மலம், வயிற்றுப் பிடிப்பு (வயிற்றுப்போக்கு)",
+              "hi": "बार-बार पतला या पानी जैसा दस्त मरोड़ के साथ"
+            },
+            "subLabel": {
+              "en": "Risk of dehydration and electrolyte loss",
+              "ta": "நீரிழப்பு மற்றும் உடல் சோர்வு அபாயம்",
+              "hi": "शरीर में पानी की कमी का खतरा"
+            },
+            "icon": "Wind",
+            "contextTag": "diarrhea"
+          },
+          {
+            "id": "mucus_or_blood_in_stool",
+            "label": {
+              "en": "Visible blood or thick mucus present in stools",
+              "ta": "மலத்தில் ரத்தம் அல்லது தடித்த சளி கலந்து வெளியேறுதல்",
+              "hi": "शौच में स्पष्ट खून या चिपचिपा बलगम आना"
+            },
+            "subLabel": {
+              "en": "Colitis, dysentery, or mucosal fissure / hemorrhoid",
+              "ta": "குடல் புண், சீதபேதி அல்லது மூலம்",
+              "hi": "आंतों में सूजन या संक्रमण का महत्वपूर्ण संकेत"
+            },
+            "icon": "AlertCircle",
+            "isEmergencyTrigger": true,
+            "contextTag": "blood_mucus_stool"
+          },
+          {
+            "id": "regular_normal_stool",
+            "label": {
+              "en": "Regular, well-formed painless bowel movement daily",
+              "ta": "தினமும் ஒருமுறை சீரான, வலியற்ற இயல்பான மலம்",
+              "hi": "प्रतिदिन एक बार सामान्य, बंधा हुआ एवं बिना दर्द के शौच"
+            },
+            "subLabel": {
+              "en": "Normal gut motility and healthy evacuation",
+              "ta": "சீரான குடல் இயக்கம்",
+              "hi": "सामान्य आंत स्वास्थ्य"
+            },
+            "icon": "Check",
+            "contextTag": "normal_bowels"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "COUGH_RESPIRATORY",
+    "matchKeywords": [
+      "cough",
+      "phlegm",
+      "sputum",
+      "wheezing",
+      "breathless",
+      "shortness of breath",
+      "chest congestion",
+      "இருமல்",
+      "சளி",
+      "கபம்",
+      "மூச்சுத் திணறல்",
+      "மூச்சு இழுப்பு",
+      "மார்பு சளி",
+      "खांसी",
+      "कफ",
+      "बलगम",
+      "सांस फूलना",
+      "सीने में जकड़न",
+      "दमा",
+      "सांस लेने में तकलीफ"
+    ],
+    "questions": [
+      {
+        "id": "Q_COUGH_NATURE_SPUTUM",
+        "questionNumber": 2,
+        "totalEstimatedQuestions": 5,
+        "category": "CHARACTER",
+        "text": {
+          "en": "What is the nature of your cough, and is there any phlegm (sputum)?",
+          "ta": "உங்கள் இருமலின் தன்மை எவ்வாறு உள்ளது? சளி/கபம் வெளியேறுகிறதா?",
+          "hi": "आपकी खांसी का प्रकार कैसा है, और क्या बलगम (कफ) निकल रहा है?"
+        },
+        "audioPromptText": {
+          "en": "Is it a dry hacking cough with no phlegm, or wet productive cough with white or yellow-green sputum?",
+          "ta": "சளியற்ற வறட்டு இருமலா, அல்லது வெள்ளை/மஞ்சள் கபம் வெளிவரும் இருமலா?",
+          "hi": "क्या सूखी खांसी है जिसमें कफ नहीं निकलता, या बलगम वाली खांसी है?"
+        },
+        "inputType": "CHOICE_CARDS",
+        "options": [
+          {
+            "id": "dry_hacking_no_sputum",
+            "label": {
+              "en": "Dry, tickling hacking cough (No phlegm / Vata cough)",
+              "ta": "தொண்டை கிச்சுகிச்சுக்கும் வறட்டு இருமல் (சளி இல்லை / வாத இருமல்)",
+              "hi": "सूखी, गले में खराश वाली खांसी (बलगम बिल्कुल नहीं / वातज कास)"
+            },
+            "subLabel": {
+              "en": "Allergic airway, viral tracheitis, or ACE-inhibitor cough",
+              "ta": "ஒவ்வாமை அல்லது வைரஸ் தொற்று",
+              "hi": "एलर्जी या वायरल संक्रमण"
+            },
+            "icon": "Wind",
+            "contextTag": "dry_cough"
+          },
+          {
+            "id": "wet_clear_white_sputum",
+            "label": {
+              "en": "Productive with clear, white or watery phlegm (Kapha)",
+              "ta": "வெள்ளை அல்லது தெளிவான நீர் போன்ற கப இருமல்",
+              "hi": "सफेद या साफ पतले बलगम वाली खांसी (कफज)"
+            },
+            "subLabel": {
+              "en": "Upper airway mucous hypersecretion or viral bronchitis",
+              "ta": "மேல் சுவாசப் பாதை சளி பெருக்கம்",
+              "hi": "सामान्य कफ जमाव"
+            },
+            "icon": "Activity",
+            "contextTag": "clear_sputum"
+          },
+          {
+            "id": "thick_yellow_green_sputum",
+            "label": {
+              "en": "Thick, yellowish or greenish purulent sputum",
+              "ta": "அடர் மஞ்சள் அல்லது பச்சையான கெட்டி சளி இருமல்",
+              "hi": "गाढ़ा, पीला या हरा बलगम निकलने वाली खांसी"
+            },
+            "subLabel": {
+              "en": "Suggests bacterial respiratory tract infection",
+              "ta": "பாக்டீரியா சுவாசப் பாதை தொற்றுக்கான சாத்தியம்",
+              "hi": "संभावित बैक्टीरियल संक्रमण का संकेत"
+            },
+            "icon": "Thermometer",
+            "contextTag": "purulent_sputum"
+          },
+          {
+            "id": "blood_tinged_hemoptysis",
+            "label": {
+              "en": "Blood-streaked or reddish rust-colored sputum (Hemoptysis)",
+              "ta": "மலர்ந்த ரத்தக் கீற்று அல்லது செம்பழுப்பு கலந்த சளி",
+              "hi": "बलगम में खून के छींटे या लाल-भूरा रंग (हीमोप्टीसिस)"
+            },
+            "subLabel": {
+              "en": "Important clinical red flag requiring urgent medical assessment",
+              "ta": "உடனடி மருத்துவ கவனிப்பு தேவைப்படும் முக்கிய எச்சரிக்கை",
+              "hi": "अत्यंत महत्वपूर्ण लक्षण - तुरंत जांच कराएं"
+            },
+            "icon": "AlertCircle",
+            "isEmergencyTrigger": true,
+            "contextTag": "hemoptysis_redflag"
+          }
+        ]
+      },
+      {
+        "id": "Q_COUGH_DYSPNEA_LEVEL",
+        "questionNumber": 3,
+        "totalEstimatedQuestions": 5,
+        "category": "SEVERITY",
+        "text": {
+          "en": "Are you experiencing any shortness of breath or difficulty breathing?",
+          "ta": "மூச்சு விடுவதில் சிரமம் அல்லது மூச்சுத் திணறல் உள்ளதா?",
+          "hi": "क्या आपको सांस लेने में तकलीफ या सांस फूलने की समस्या हो रही है?"
+        },
+        "audioPromptText": {
+          "en": "Do you feel breathless while resting, only when walking or climbing stairs, or not at all?",
+          "ta": "அமர்ந்திருக்கும் போதே மூச்சு வாங்குகிறதா, அல்லது நடக்கும் போது மட்டும் தானா?",
+          "hi": "क्या बैठे-बैठे भी सांस फूलती है, केवल चलने या सीढ़ियां चढ़ने पर, या बिल्कुल नहीं?"
+        },
+        "inputType": "CHOICE_CARDS",
+        "options": [
+          {
+            "id": "breathless_at_rest",
+            "label": {
+              "en": "Short of breath even while sitting resting or speaking sentences",
+              "ta": "அமர்ந்திருக்கும் போதோ அல்லது பேசும் போதோ மூச்சுத் திணறல்",
+              "hi": "बैठे-बैठे या बात करते समय भी सांस फूलना"
+            },
+            "subLabel": {
+              "en": "Severe respiratory distress indicator (Clinical priority)",
+              "ta": "தீவிர மூச்சுத் திணறல் - உடனடி கவனிப்பு தேவை",
+              "hi": "गंभीर सांस का संकट - आपातकालीन प्राथमिकता"
+            },
+            "icon": "AlertCircle",
+            "isEmergencyTrigger": true,
+            "contextTag": "rest_dyspnea"
+          },
+          {
+            "id": "breathless_on_exertion",
+            "label": {
+              "en": "Breathless only on physical effort (Climbing stairs, walking uphill)",
+              "ta": "படியேறும் போது அல்லது வேகமாக நடக்கும் போது மட்டும் மூச்சு வாங்குதல்",
+              "hi": "केवल मेहनत करने पर (सीढ़ियां चढ़ने या तेज चलने पर)"
+            },
+            "subLabel": {
+              "en": "Exertional dyspnea (Asthma / Bronchospasm / Low endurance)",
+              "ta": "ஆஸ்துமா அல்லது மூச்சுக்குழாய் இறுக்கம்",
+              "hi": "दमा या ब्रोंकाइटिस का संकेत"
+            },
+            "icon": "Activity",
+            "contextTag": "exertional_dyspnea"
+          },
+          {
+            "id": "no_breathlessness_clean",
+            "label": {
+              "en": "No shortness of breath (Breathing is easy and comfortable)",
+              "ta": "மூச்சுத் திணறல் இல்லை (சுவாசம் இயல்பாக உள்ளது)",
+              "hi": "सांस फूलने की कोई समस्या नहीं (सांस सहज और सामान्य है)"
+            },
+            "subLabel": {
+              "en": "Adequate oxygenation and airway patency",
+              "ta": "சீரான சுவாச நிலை",
+              "hi": "सामान्य फेफड़े"
+            },
+            "icon": "Check",
+            "contextTag": "no_dyspnea"
+          }
+        ]
+      },
+      {
+        "id": "Q_COUGH_TIMING_NOCTURNAL",
+        "questionNumber": 4,
+        "totalEstimatedQuestions": 5,
+        "category": "TRIGGERS",
+        "text": {
+          "en": "When is your cough most troublesome during the day or night?",
+          "ta": "பகலில் அல்லது இரவில் எப்போது உங்கள் இருமல் மிகவும் அதிகமாகிறது?",
+          "hi": "दिन या रात में आपकी खांसी किस समय सबसे ज्यादा परेशान करती है?"
+        },
+        "audioPromptText": {
+          "en": "Is it worse at night disturbing sleep, early in the morning, or provoked by cold air and dust?",
+          "ta": "இரவில் படுத்தவுடன் இருமல் கூடி தூக்கம் கெடுகிறதா, அல்லது அதிகாலையிலா?",
+          "hi": "क्या रात को लेटते ही खांसी बढ़ती है, सुबह उठते ही, या ठंडी हवा और धूल से?"
+        },
+        "inputType": "CHOICE_CARDS",
+        "options": [
+          {
+            "id": "nocturnal_lying_down",
+            "label": {
+              "en": "Worse at night upon lying flat (Disturbs sleep / Wheezing)",
+              "ta": "இரவில் படுத்தவுடன் இருமல் அதிகமாகி தூக்கத்தை கெடுக்கிறது",
+              "hi": "रात को लेटते ही तेज खांसी होना जिससे नींद टूटती है"
+            },
+            "subLabel": {
+              "en": "Cough-variant asthma, GERD reflux, or post-nasal drip",
+              "ta": "ஆஸ்துமா அல்லது இரைப்பை அமில பின்வழிதல்",
+              "hi": "दमा या एसिड रिफ्लक्स का संकेत"
+            },
+            "icon": "Clock",
+            "contextTag": "nocturnal_cough"
+          },
+          {
+            "id": "morning_clearing_paroxysm",
+            "label": {
+              "en": "Worse early morning on waking (Heavy chest clearing)",
+              "ta": "அதிகாலையில் எழுந்தவுடன் மார்பு சளியை வெளியேற்றும் இருமல்",
+              "hi": "सुबह उठते ही सीने से कफ निकालने वाली तेज खांसी"
+            },
+            "subLabel": {
+              "en": "Chronic bronchitis or sinus drainage pooling overnight",
+              "ta": "மூச்சுக்குழாய் அழற்சி அல்லது சைனஸ் சளி",
+              "hi": "क्रोनिक ब्रोंकाइटिस का लक्षण"
+            },
+            "icon": "Wind",
+            "contextTag": "morning_clearing"
+          },
+          {
+            "id": "cold_air_dust_exercise",
+            "label": {
+              "en": "Triggered by cold air, smoke, dust, fan/AC, or physical exercise",
+              "ta": "குளிர்ந்த காற்று, தூசி, புகை, ஃபேன்/ஏசி காற்று அல்லது உடற்பயிற்சியால் கூடுகிறது",
+              "hi": "ठंडी हवा, धूल, धुएं, एसी या व्यायाम करने से खांसी उठना"
+            },
+            "subLabel": {
+              "en": "Airway hyper-reactivity (Allergic / Vata-Kapha Prakopa)",
+              "ta": "சுவாசப் பாதை ஒவ்வாமை மற்றும் சுருக்கம்",
+              "hi": "एलर्जी एवं श्वासनली की अति-संवेदनशीलता"
+            },
+            "icon": "Activity",
+            "contextTag": "hyperactive_airway"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "SKIN_PROBLEM",
+    "matchKeywords": [
+      "skin",
+      "rash",
+      "itching",
+      "allergy",
+      "eczema",
+      "psoriasis",
+      "blister",
+      "hives",
+      "boil",
+      "தோல்",
+      "அரிப்பு",
+      "தடிப்பு",
+      "ஒவ்வாமை",
+      "படை",
+      "சிரங்கு",
+      "கொப்பளம்",
+      "त्वचा",
+      "खुजली",
+      "चकत्ते",
+      "एलर्जी",
+      "दाद",
+      "खाज",
+      "पित्ती",
+      "छाले"
+    ],
+    "questions": [
+      {
+        "id": "Q_SKIN_DISTRIBUTION",
+        "questionNumber": 2,
+        "totalEstimatedQuestions": 5,
+        "category": "BODY_LOCATION",
+        "text": {
+          "en": "Where are the skin patches, rashes or itching located on your body?",
+          "ta": "உடலில் எந்தப் பகுதியில் தோல் தடிப்புகள், அரிப்பு அல்லது கொப்பளங்கள் உள்ளன?",
+          "hi": "शरीर के किस हिस्से पर त्वचा के चकत्ते, खुजली या दाने हैं?"
+        },
+        "audioPromptText": {
+          "en": "Is the skin problem localized to hands/face, in elbow/knee folds, or spread all over your body?",
+          "ta": "முகம், கைகளில் மட்டுமா, மூட்டு மடிப்புகளிலா, அல்லது உடல் முழுவதும் பரவியுள்ளதா?",
+          "hi": "क्या परेशानी केवल हाथ-चेहरे पर है, कोहनी-घुटने की सिलवटों में, या पूरे शरीर में?"
+        },
+        "inputType": "CHOICE_CARDS",
+        "options": [
+          {
+            "id": "localized_hands_face",
+            "label": {
+              "en": "Localized to Face, Neck, Hands, or Feet only",
+              "ta": "முகம், கழுத்து, கைகள் அல்லது கால்களில் மட்டும்",
+              "hi": "केवल चेहरे, गर्दन, हाथ या पैरों तक सीमित"
+            },
+            "subLabel": {
+              "en": "Contact dermatitis, sun allergy, or tinea presentation",
+              "ta": "ஒவ்வாமை அல்லது நேரடி தொடுதல் பாதிப்பு",
+              "hi": "संपर्क एलर्जी या फंगल संक्रमण"
+            },
+            "icon": "User",
+            "contextTag": "localized_extremities"
+          },
+          {
+            "id": "flexural_creases_folds",
+            "label": {
+              "en": "Skin folds & creases (Elbows, behind knees, armpits, groin)",
+              "ta": "மூட்டு மடிப்புகள் (முழங்கை, முழங்கால் பின்புறம், இடுக்குகள்)",
+              "hi": "त्वचा की सिलवटों में (कोहनी, घुटनों के पीछे, कांख या जांघों में)"
+            },
+            "subLabel": {
+              "en": "Classic site for Atopic Eczema or Intertrigo",
+              "ta": "எக்ஸிமா அல்லது ஈரப்பதம் சார்ந்த பூஞ்சை தொற்று",
+              "hi": "एक्जिमा या फंगल संक्रमण का सामान्य क्षेत्र"
+            },
+            "icon": "Activity",
+            "contextTag": "flexural_eczema"
+          },
+          {
+            "id": "diffuse_all_over_body",
+            "label": {
+              "en": "Widespread / Diffuse across the entire torso and limbs",
+              "ta": "முழு உடலிலும் (மார்பு, முதுகு, கைகால்களில் பரவலாக)",
+              "hi": "पूरे शरीर पर (सीने, पीठ और हाथ-पैरों में फैला हुआ)"
+            },
+            "subLabel": {
+              "en": "Systemic drug reaction, widespread urticaria, or viral exanthem",
+              "ta": "மருந்து ஒவ்வாமை அல்லது பரவலான நச்சுத்தன்மை",
+              "hi": "दवा से एलर्जी या पूरे शरीर का रिएक्शन"
+            },
+            "icon": "Compass",
+            "contextTag": "diffuse_generalized"
+          }
+        ]
+      },
+      {
+        "id": "Q_SKIN_SENSATION_PRURITUS",
+        "questionNumber": 3,
+        "totalEstimatedQuestions": 5,
+        "category": "CHARACTER",
+        "text": {
+          "en": "What sensation is most dominant on your affected skin?",
+          "ta": "பாதிக்கப்பட்ட தோலில் எந்த உணர்வு மிகவும் தீவிரமாக உள்ளது?",
+          "hi": "प्रभावित त्वचा पर सबसे प्रमुख लक्षण क्या महसूस होता है?"
+        },
+        "audioPromptText": {
+          "en": "Is there intense itching especially at night, severe burning and heat, or painful tenderness?",
+          "ta": "இரவில் தீவிரமடையும் அரிப்பா, எரியும் உஷ்ணமா, அல்லது தொட்டால் வலிக்கிறதா?",
+          "hi": "क्या रात में तेज खुजली होती है, आग जैसी जलन है, या छूने पर दर्द होता है?"
+        },
+        "inputType": "CHOICE_CARDS",
+        "options": [
+          {
+            "id": "intense_pruritus_night",
+            "label": {
+              "en": "Intense, uncontrollable itching (Significantly worse at night)",
+              "ta": "தாங்க முடியாத தீவிர அரிப்பு (குறிப்பாக இரவு நேரத்தில் அதிகம்)",
+              "hi": "असहनीय तेज खुजली (विशेष रूप से रात के समय बहुत ज्यादा)"
+            },
+            "subLabel": {
+              "en": "Classic scabies, urticaria, or dry eczema pruritus",
+              "ta": "சொறி, சிறங்கு அல்லது ஒவ்வாமை அரிப்பு",
+              "hi": "खाज, पित्ती या गंभीर एलर्जी का लक्षण"
+            },
+            "icon": "Activity",
+            "contextTag": "intense_itching"
+          },
+          {
+            "id": "burning_stinging_heat",
+            "label": {
+              "en": "Intense burning, stinging pain or heat (Pitta dominance)",
+              "ta": "எரியும் தன்மை, குடைச்சல் அல்லது அனல் உணர்வு (பித்த உஷ்ணம்)",
+              "hi": "तेज जलन, चुभन या अंगारे जैसा तपना (पित्त दोष)"
+            },
+            "subLabel": {
+              "en": "Herpes zoster, acute contact burn, or erysipelas",
+              "ta": "அக்கி அல்லது தீவிர தோல் அழற்சி",
+              "hi": "हर्पीस या तीव्र त्वचा संक्रमण"
+            },
+            "icon": "Thermometer",
+            "contextTag": "burning_skin"
+          },
+          {
+            "id": "painful_tender_to_touch",
+            "label": {
+              "en": "Painful, swollen and tender when touched (Abscess / Furuncle)",
+              "ta": "தொட்டால் கடுமையான வலி, வீக்கம் மற்றும் சீழ் கட்டி போன்ற உணர்வு",
+              "hi": "छूने पर तेज दर्द, सूजन एवं गांठ (फोड़ा / मवाद)"
+            },
+            "subLabel": {
+              "en": "Bacterial skin infection / cellulitis risk",
+              "ta": "தோல் சீழ் தொற்று அல்லது அழற்சி",
+              "hi": "बैक्टीरियल संक्रमण का संकेत"
+            },
+            "icon": "AlertCircle",
+            "contextTag": "tender_swollen"
+          }
+        ]
+      },
+      {
+        "id": "Q_SKIN_MORPHOLOGY_TRIGGERS",
+        "questionNumber": 4,
+        "totalEstimatedQuestions": 5,
+        "category": "TRIGGERS",
+        "text": {
+          "en": "How does the skin appearance look, and did any new product or medication precede it?",
+          "ta": "தோல் பார்ப்பதற்கு எவ்வாறு உள்ளது? ஏதேனும் புதிய சோப்பு, மருந்து பயன்படுத்தினீர்களா?",
+          "hi": "त्वचा देखने में कैसी लगती है, और क्या किसी नए साबुन, दवा या तेल से यह शुरू हुआ?"
+        },
+        "audioPromptText": {
+          "en": "Are there dry scaly plaques, red raised welts like insect bites, or fluid-filled blisters?",
+          "ta": "வறண்ட செதில் உதிர்வா, தடித்த தடிப்புகளா, அல்லது நீர் கொப்பளங்களா?",
+          "hi": "क्या सूखी पपड़ी उतर रही है, उभरे हुए लाल चकत्ते हैं, या पानी भरे छाले हैं?"
+        },
+        "inputType": "CHOICE_CARDS",
+        "options": [
+          {
+            "id": "dry_scaly_silvery_plaques",
+            "label": {
+              "en": "Dry, thick rough scales or peeling plaques (Psoriasis / Dry eczema)",
+              "ta": "வறண்ட, தடித்த செதில்கள் அல்லது தோல் உரிதல் (செதில் படை / தடிப்பு)",
+              "hi": "सूखी, मोटी पपड़ीदार परतें या चमड़ी का उतरना (सोरायसिस / एक्जिमा)"
+            },
+            "subLabel": {
+              "en": "Chronic hyperkeratosis and skin barrier breakdown",
+              "ta": "நீண்டகால தோல் வறட்சி நோய்",
+              "hi": "पुरानी त्वचा समस्या"
+            },
+            "icon": "Compass",
+            "contextTag": "scaly_plaques"
+          },
+          {
+            "id": "raised_red_welts_urticaria",
+            "label": {
+              "en": "Raised, red itchy wheals / hives appearing and disappearing rapidly",
+              "ta": "சிவப்பு தடிப்புகள் / தடிப்புத் திட்டுகள் திடீரென தோன்றி மறைதல்",
+              "hi": "उभरे हुए लाल चकत्ते / पित्ती जो अचानक आते और जाते हैं"
+            },
+            "subLabel": {
+              "en": "Acute allergic urticaria / histamine degranulation",
+              "ta": "ஒவ்வாமை தடிப்பு மற்றும் நச்சுத் தன்மை",
+              "hi": "एलर्जी और पित्ती का तीव्र अटैक"
+            },
+            "icon": "Wind",
+            "contextTag": "urticarial_wheals"
+          },
+          {
+            "id": "weeping_fluid_blisters",
+            "label": {
+              "en": "Small fluid-filled blisters, oozing wet discharge or crusting",
+              "ta": "சிறிய நீர் கொப்பளங்கள், கசியும் திரவம் அல்லது மேலோடு உருவாதல்",
+              "hi": "पानी से भरे छोटे छाले, पानी रिसना या पपड़ी जमना"
+            },
+            "subLabel": {
+              "en": "Acute dermatitis or viral vesicular eruption",
+              "ta": "நீர் கோர்த்த தோல் அழற்சி",
+              "hi": "गीला एक्जिमा या छाले"
+            },
+            "icon": "Activity",
+            "contextTag": "weeping_vesicles"
+          },
+          {
+            "id": "new_soap_cosmetic_or_drug",
+            "label": {
+              "en": "Started soon after using a new soap, hair dye, cream, jewelry, or oral medicine",
+              "ta": "புதிய சோப்பு, டை, கிரீம், ஆபரணம் அல்லது மருந்து உண்ட பின் தொடங்கியது",
+              "hi": "किसी नए साबुन, डाई, क्रीम, गहने या दवा लेने के बाद शुरू हुआ"
+            },
+            "subLabel": {
+              "en": "Clear contact allergen or drug eruption etiology",
+              "ta": "பொருள் ஒவ்வாமை அல்லது மருந்து தாக்கம்",
+              "hi": "दवा या केमिकल की सीधी एलर्जी"
+            },
+            "icon": "AlertCircle",
+            "contextTag": "contact_allergen_drug"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "CHEST_PAIN",
+    "matchKeywords": [
+      "chest pain",
+      "chest pressure",
+      "heart attack",
+      "angina",
+      "squeezing chest",
+      "left arm pain",
+      "மார்பு வலி",
+      "நெஞ்சு வலி",
+      "மாரடைப்பு",
+      "நெஞ்சு பாரம்",
+      "இடது கை வலி",
+      "सीने में दर्द",
+      "हार्ट अटैक",
+      "सीने में भारीपन",
+      "बाएं हाथ में दर्द"
+    ],
+    "questions": [
+      {
+        "id": "Q_CHEST_RADIATION_SYMPTOMS",
+        "questionNumber": 2,
+        "totalEstimatedQuestions": 4,
+        "category": "CHARACTER",
+        "text": {
+          "en": "CRITICAL SAFETY ASSESSMENT: Does your chest discomfort travel or radiate anywhere else?",
+          "ta": "அவசர பாதுகாப்பு ஆய்வு: உங்கள் மார்பு வலி உடலின் பிற பகுதிகளுக்கு பரவுகிறதா?",
+          "hi": "आपातकालीन सुरक्षा जांच: क्या आपके सीने का दर्द शरीर में कहीं और भी फैलता है?"
+        },
+        "audioPromptText": {
+          "en": "Does the chest pain spread to your left arm, neck, jaw, or shoulder blade?",
+          "ta": "மார்பு வலி இடது கை, கழுத்து, தாடை அல்லது தோள்பட்டை வரை பரவுகிறதா?",
+          "hi": "क्या सीने का दर्द बाएं हाथ, गर्दन, जबड़े या कंधे तक फैल रहा है?"
+        },
+        "inputType": "CHOICE_CARDS",
+        "options": [
+          {
+            "id": "radiates_left_arm_jaw",
+            "label": {
+              "en": "Spreads to Left Arm, Shoulder, Neck, or Jaw (CRITICAL RED FLAG)",
+              "ta": "இடது கை, தோள்பட்டை, கழுத்து அல்லது தாடை வரை பரவுகிறது (ஆபத்தான அறிகுறி)",
+              "hi": "बाएं हाथ, कंधे, गर्दन या जबड़े में फैलता है (गंभीर आपातकाल)"
+            },
+            "subLabel": {
+              "en": "High probability of Acute Coronary Syndrome — Immediate ER Required",
+              "ta": "மாரடைப்புக்கான தீவிர அறிகுறி - உடனடி அவசர சிகிச்சை தேவை",
+              "hi": "हार्ट अटैक का गंभीर लक्षण - तुरंत 108 पर कॉल करें"
+            },
+            "icon": "Heart",
+            "isEmergencyTrigger": true,
+            "contextTag": "cardiac_radiation_redflag"
+          },
+          {
+            "id": "radiates_upper_back",
+            "label": {
+              "en": "Radiates straight through to middle or upper back",
+              "ta": "நேராக முதுகு அல்லது விலா எலும்புகளுக்கு பின்புறம் பரவுகிறது",
+              "hi": "सीधे पीठ के बीच में या ऊपर की ओर फैलता है"
+            },
+            "subLabel": {
+              "en": "Aortic or esophageal source requiring urgent doctor examination",
+              "ta": "உடனடி மருத்துவ ஆய்வு தேவை",
+              "hi": "तुरंत डॉक्टर से जांच कराएं"
+            },
+            "icon": "AlertCircle",
+            "isEmergencyTrigger": true,
+            "contextTag": "back_radiation"
+          },
+          {
+            "id": "localized_chest_wall_worse_breath",
+            "label": {
+              "en": "Strictly localized to ribs / muscle; worse on taking deep breath or pressing",
+              "ta": "மார்பு எலும்பு/தசையில் மட்டும்; ஆழமாக மூச்சு விடும் போது அல்லது தொட்டால் கூடுகிறது",
+              "hi": "केवल सीने की पसलियों में; गहरी सांस लेने या दबाने पर बढ़ता है"
+            },
+            "subLabel": {
+              "en": "Musculoskeletal costochondritis or chest wall strain",
+              "ta": "தசை வலி அல்லது விலா எலும்பு அழற்சி",
+              "hi": "मांसपेशियों का खिंचाव"
+            },
+            "icon": "Activity",
+            "contextTag": "musculoskeletal_chest"
+          }
+        ]
+      },
+      {
+        "id": "Q_CHEST_SWEATING_DIAPHORESIS",
+        "questionNumber": 3,
+        "totalEstimatedQuestions": 4,
+        "category": "ASSOCIATED",
+        "text": {
+          "en": "Are you experiencing profuse cold sweating, extreme lightheadedness, or feeling faint?",
+          "ta": "உடலில் குளிர்ந்த வியர்வை கொட்டுதல், தலைசுற்றல் அல்லது மயக்கம் போன்ற உணர்வு உள்ளதா?",
+          "hi": "क्या आपको ठंडा पसीना आ रहा है, तेज चक्कर या बेहोशी जैसी स्थिति लग रही है?"
+        },
+        "audioPromptText": {
+          "en": "Do you have cold sweating, dizziness, nausea, or feeling like fainting?",
+          "ta": "குளிர்ந்த வியர்வை, தலைசுற்றல் அல்லது மயக்க உணர்வு உள்ளதா?",
+          "hi": "क्या ठंडा पसीना, चक्कर या बेहोशी जैसा लग रहा है?"
+        },
+        "inputType": "CHOICE_CARDS",
+        "options": [
+          {
+            "id": "profuse_cold_sweat_faint",
+            "label": {
+              "en": "Yes: Cold clammy sweating, extreme weakness, or near fainting (CRITICAL)",
+              "ta": "ஆம்: குளிர்ந்த வியர்வை, தீவிர உடல் சோர்வு அல்லது மயக்க உணர்வு (அவசரம்)",
+              "hi": "हां: ठंडा चिपचिपा पसीना, अत्यधिक कमजोरी या बेहोशी (आपातकाल)"
+            },
+            "subLabel": {
+              "en": "Hemodynamic compromise indicator — Alert emergency team",
+              "ta": "உடனடி ஆம்புலன்ஸ் / அவசர சிகிச்சை தேவை",
+              "hi": "हार्ट अटैक का गंभीर लक्षण - तत्काल अस्पताल जाएं"
+            },
+            "icon": "AlertCircle",
+            "isEmergencyTrigger": true,
+            "contextTag": "diaphoresis_redflag"
+          },
+          {
+            "id": "palpitations_anxiety_only",
+            "label": {
+              "en": "Heart racing / palpitations and mild nervous anxiety",
+              "ta": "நெஞ்சு படபடப்பு மற்றும் லேசான பதற்றம் மட்டும்",
+              "hi": "धड़कन तेज चलना एवं हल्की घबराहट"
+            },
+            "subLabel": {
+              "en": "Autonomic stimulation or cardiac arrhythmia review",
+              "ta": "இதயத் துடிப்பு ஆய்வு தேவை",
+              "hi": "हार्ट रेट एवं ईसीजी जांच कराएं"
+            },
+            "icon": "Heart",
+            "contextTag": "palpitations"
+          },
+          {
+            "id": "no_sweating_or_dizziness",
+            "label": {
+              "en": "No cold sweating, no dizziness, completely clear-headed",
+              "ta": "குளிர்ந்த வியர்வை இல்லை, மயக்கமும் இல்லை",
+              "hi": "न ठंडा पसीना है और न ही चक्कर, होश पूरी तरह ठीक है"
+            },
+            "subLabel": {
+              "en": "Stable hemodynamic presentation",
+              "ta": "நிலையான நிலைமை",
+              "hi": "सामान्य स्थिति"
+            },
+            "icon": "Check",
+            "contextTag": "hemodynamically_stable"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "BACK_PAIN",
+    "matchKeywords": [
+      "back pain",
+      "back ache",
+      "backpain",
+      "lower back",
+      "lumbar",
+      "spine pain",
+      "lumbago",
+      "slipped disc",
+      "sciatica",
+      "back stiffness",
+      "back",
+      "முதுகு வலி",
+      "முதுகுவலி",
+      "இடுப்பு வலி",
+      "கீழ் முதுகு வலி",
+      "முதுகு பிடிப்பு",
+      "தண்டுவட வலி",
+      "முதுகு",
+      "पीठ दर्द",
+      "कमर दर्द",
+      "कमर में दर्द",
+      "कमर का दर्द",
+      "रीढ़ की हड्डी में दर्द",
+      "पीठ में दर्द",
+      "लम्बर",
+      "कमर",
+      "पीठ"
+    ],
+    "questions": [
+      {
+        "id": "Q_BACKPAIN_LOCATION",
+        "questionNumber": 2,
+        "totalEstimatedQuestions": 5,
+        "category": "BODY_LOCATION",
+        "text": {
+          "en": "Where exactly on your back do you feel the pain?",
+          "ta": "முதுகில் குறிப்பாக எந்தப் பகுதியில் வலி உள்ளது?",
+          "hi": "पीठ में विशेष रूप से किस स्थान पर दर्द है?"
+        },
+        "audioPromptText": {
+          "en": "Is it in the lower back, middle back, upper back near neck, or buttocks?",
+          "ta": "கீழ் முதுகு, நடு முதுகு, மேல் முதுகு அல்லது இடுப்புப் பகுதியா?",
+          "hi": "क्या यह निचली कमर में, मध्य पीठ में, ऊपरी भाग में या नितंबों में है?"
+        },
+        "inputType": "CHOICE_CARDS",
+        "options": [
+          {
+            "id": "lower_back_lumbar",
+            "label": {
+              "en": "Lower Back (Lumbar area above hips)",
+              "ta": "கீழ் முதுகு (இடுப்புக்கு மேல் உள்ள பகுதி)",
+              "hi": "निचली कमर (कूल्हों के ठीक ऊपर का भाग)"
+            },
+            "subLabel": {
+              "en": "Most common area for muscular strain or disc issues",
+              "ta": "தசைப் பிடிப்பு அல்லது தண்டுவட வட்டு பிரச்சனை",
+              "hi": "मांसपेशियों में खिंचाव या डिस्क संबंधी सामान्य भाग"
+            },
+            "icon": "Activity",
+            "contextTag": "lumbar_spine"
+          },
+          {
+            "id": "middle_back_thoracic",
+            "label": {
+              "en": "Middle Back (Between shoulder blades / rib cage)",
+              "ta": "நடு முதுகு (தோள்பட்டை இறக்கைகளுக்கு இடையே)",
+              "hi": "मध्य पीठ (कंधों की हड्डियों के बीच)"
+            },
+            "subLabel": {
+              "en": "Related to postural fatigue, spinal joints, or muscle spasm",
+              "ta": "உட்காரும் முறை அல்லது தசை இறுக்கம்",
+              "hi": "गलत बैठने की मुद्रा या मांसपेशियों की जकड़न"
+            },
+            "icon": "Compass",
+            "contextTag": "thoracic_spine"
+          },
+          {
+            "id": "upper_back_cervical",
+            "label": {
+              "en": "Upper Back & Neck Base (Cervical-thoracic)",
+              "ta": "மேல் முதுகு மற்றும் கழுத்து அடிப்பகுதி",
+              "hi": "ऊपरी पीठ एवं गर्दन का निचला हिस्सा"
+            },
+            "subLabel": {
+              "en": "Desk work strain or cervical spine tension",
+              "ta": "கழுத்து எலும்பு தேய்மானம் அல்லது கணினி பணிப் பிடிப்பு",
+              "hi": "गर्दन की हड्डियों में खिंचाव या लंबे समय तक बैठने से दर्द"
+            },
+            "icon": "User",
+            "contextTag": "upper_back_tension"
+          },
+          {
+            "id": "buttocks_sacrum",
+            "label": {
+              "en": "Sacrum / Buttocks & Tailbone area",
+              "ta": "இடுப்புப் பின்னணி மற்றும் வால் எலும்புப் பகுதி",
+              "hi": "नितंब एवं रीढ़ के निचले सिरे का भाग"
+            },
+            "subLabel": {
+              "en": "Sacroiliac joint or pelvic radiation",
+              "ta": "இடுப்பு மூட்டு அழற்சி அல்லது பிடிப்பு",
+              "hi": "कूल्हे के जोड़ या श्रोणि संबंधी दबाव"
+            },
+            "icon": "Activity",
+            "contextTag": "sacroiliac_region"
+          }
+        ]
+      },
+      {
+        "id": "Q_BACKPAIN_ONSET",
+        "questionNumber": 3,
+        "totalEstimatedQuestions": 5,
+        "category": "CHARACTER",
+        "text": {
+          "en": "How did your back pain begin?",
+          "ta": "முதுகு வலி எவ்வாறு தொடங்கியது?",
+          "hi": "पीठ दर्द की शुरुआत कैसे हुई?"
+        },
+        "audioPromptText": {
+          "en": "Did it start suddenly after lifting, gradually over weeks, or after an awkward bend?",
+          "ta": "எடை தூக்கியதால் திடீரென வந்ததா, வளைந்ததால் வந்ததா, அல்லது படிப்படியாக வந்ததா?",
+          "hi": "क्या वजन उठाने से अचानक हुआ, झुकने से हुआ, या धीरे-धीरे शुरू हुआ?"
+        },
+        "inputType": "CHOICE_CARDS",
+        "options": [
+          {
+            "id": "sudden_lifting_heavy",
+            "label": {
+              "en": "Suddenly after lifting heavy weight or sudden twist",
+              "ta": "கனமான எடை தூக்கிய பிறகு அல்லது திடீர் திருப்பத்தால் வந்தது",
+              "hi": "भारी वजन उठाने या अचानक मुड़ने के बाद अचानक शुरू हुआ"
+            },
+            "subLabel": {
+              "en": "Classic mechanical sprain or acute lumbar strain",
+              "ta": "திடீர் தசை சுளுக்கு அல்லது தண்டுவட அழுத்தம்",
+              "hi": "अचानक मांसपेशियों में गंभीर खिंचाव या मोच"
+            },
+            "icon": "Activity",
+            "contextTag": "lifting_strain"
+          },
+          {
+            "id": "sudden_bending_catch",
+            "label": {
+              "en": "Sudden sharp catch while bending forward",
+              "ta": "முன்னோக்கி குனிந்த போது சட்டென பிடித்தது",
+              "hi": "आगे की ओर झुकते समय अचानक तेज जकड़न आई"
+            },
+            "subLabel": {
+              "en": "Acute facet lock or muscular spasm",
+              "ta": "திடீர் தசைப் பிடிப்பு",
+              "hi": "मांसपेशियों में अचानक तेज अकड़न"
+            },
+            "icon": "AlertCircle",
+            "contextTag": "acute_spasm"
+          },
+          {
+            "id": "gradual_prolonged_sitting",
+            "label": {
+              "en": "Gradually developed from desk work or prolonged sitting",
+              "ta": "நீண்ட நேரம் உட்கார்ந்து வேலை செய்ததால் மெதுவாக அதிகரித்தது",
+              "hi": "लंबे समय तक बैठने या गलत मुद्रा से धीरे-धीरे बढ़ा"
+            },
+            "subLabel": {
+              "en": "Postural back strain and core fatigue",
+              "ta": "முறையற்ற உடல் நிலை மற்றும் தசை சோர்வு",
+              "hi": "बैठने की गलत मुद्रा और कमजोरी"
+            },
+            "icon": "Clock",
+            "contextTag": "postural_strain"
+          },
+          {
+            "id": "injury_fall",
+            "label": {
+              "en": "Following a slip, trip, fall, or direct impact",
+              "ta": "வழுக்கி விழுந்ததால் அல்லது அடிபட்டதால் தொடங்கியது",
+              "hi": "फिसलने, गिरने या चोट लगने के बाद शुरू हुआ"
+            },
+            "subLabel": {
+              "en": "Requires assessment to exclude structural injury",
+              "ta": "எலும்பு முறிவு அல்லது உள் காயம் சரிபார்க்க வேண்டும்",
+              "hi": "चोट अथवा फ्रैक्चर की चिकित्सीय जांच आवश्यक"
+            },
+            "icon": "AlertCircle",
+            "contextTag": "trauma_onset"
+          }
+        ]
+      },
+      {
+        "id": "Q_BACKPAIN_RADIATION",
+        "questionNumber": 4,
+        "totalEstimatedQuestions": 5,
+        "category": "CHARACTER",
+        "text": {
+          "en": "Does the pain spread or shoot down into your legs or feet?",
+          "ta": "வலி கால்கள் அல்லது பாதங்களுக்கு கீழ்நோக்கி பரவுகிறதா?",
+          "hi": "क्या दर्द नीचे पैरों या पंजों की ओर फैलता है?"
+        },
+        "audioPromptText": {
+          "en": "Does the pain shoot down past the knee, stay in the buttocks, or remain only in the back?",
+          "ta": "முழங்காலுக்கு கீழ் பரவுகிறதா, இடுப்பில் நிற்கிறதா, அல்லது முதுகில் மட்டுமா?",
+          "hi": "क्या दर्द घुटने से नीचे जाता है, केवल नितंब में रहता है, या सिर्फ पीठ में है?"
+        },
+        "inputType": "CHOICE_CARDS",
+        "options": [
+          {
+            "id": "radiates_past_knee_sciatica",
+            "label": {
+              "en": "Yes, electric sharp pain shooting down one leg past the knee",
+              "ta": "ஆம், ஒரு காலில் முழங்காலுக்கு கீழ் வரை மின்சாரம் பாய்வது போல் பரவுகிறது",
+              "hi": "हां, एक पैर में घुटने के नीचे तक बिजली जैसा तेज दर्द जाता है"
+            },
+            "subLabel": {
+              "en": "Nerve root irritation or sciatica pattern",
+              "ta": "சியாட்டிகா நரம்பு அழுத்தம்",
+              "hi": "सायटिका नस में दबाव का लक्षण"
+            },
+            "icon": "Activity",
+            "contextTag": "sciatica_radiation"
+          },
+          {
+            "id": "radiates_buttock_thigh_only",
+            "label": {
+              "en": "Spreads only into the buttock or upper thigh, not below knee",
+              "ta": "இடுப்பு மற்றும் தொடை மேல் பகுதி வரை மட்டும் பரவுகிறது",
+              "hi": "केवल नितंब या जांघ के ऊपरी भाग तक फैलता है, घुटने से नीचे नहीं"
+            },
+            "subLabel": {
+              "en": "Referred pain from lumbar muscles or sacroiliac joint",
+              "ta": "முதுகு தசை வலி பரவுதல்",
+              "hi": "मांसपेशियों के खिंचाव का हल्का फैलाव"
+            },
+            "icon": "Compass",
+            "contextTag": "referred_thigh_pain"
+          },
+          {
+            "id": "strictly_localized_back",
+            "label": {
+              "en": "No radiation. The pain stays strictly localized in the back",
+              "ta": "இல்லை, பரவவில்லை. வலி முதுகில் மட்டுமே உள்ளது",
+              "hi": "नहीं, दर्द बिल्कुल नहीं फैलता। सिर्फ पीठ में ही सीमित है"
+            },
+            "subLabel": {
+              "en": "Localized axial muscular or mechanical back pain",
+              "ta": "முதுகுப் பகுதியில் மட்டுமே உள்ள தசை வலி",
+              "hi": "केवल पीठ की मांसपेशियों तक सीमित दर्द"
+            },
+            "icon": "Check",
+            "contextTag": "localized_back_pain"
+          }
+        ]
+      },
+      {
+        "id": "Q_BACKPAIN_FACTORS",
+        "questionNumber": 5,
+        "totalEstimatedQuestions": 5,
+        "category": "TRIGGERS",
+        "text": {
+          "en": "What makes your back pain better or worse?",
+          "ta": "எந்த செயல்களால் முதுகு வலி கூடுகிறது அல்லது குறைகிறது?",
+          "hi": "किन गतिविधियों से पीठ दर्द बढ़ता या कम होता है?"
+        },
+        "audioPromptText": {
+          "en": "Does bending make it worse, resting relieve it, or are you stiff in the morning?",
+          "ta": "குனிந்தால் கூடுகிறதா, படுத்தால் குறைகிறதா, அல்லது காலையில் கடினமாகிறதா?",
+          "hi": "क्या झुकने से बढ़ता है, आराम करने से घटता है, या सुबह अकड़न रहती है?"
+        },
+        "inputType": "CHOICE_CARDS",
+        "options": [
+          {
+            "id": "worse_bending_walking",
+            "label": {
+              "en": "Worse with bending, lifting, or walking; relieved by lying flat",
+              "ta": "குனிந்தால் அல்லது நடந்தால் கூடுகிறது; படுத்தால் குறைகிறது",
+              "hi": "झुकने या चलने से बढ़ता है; सीधा लेटने पर आराम मिलता है"
+            },
+            "subLabel": {
+              "en": "Typical mechanical strain relieved by unloading spine",
+              "ta": "ஓய்வெடுக்கும் போது குறையும் தசை வலி",
+              "hi": "आराम करने पर घटने वाला यांत्रिक दर्द"
+            },
+            "icon": "Activity",
+            "contextTag": "mechanical_unloading_relieves"
+          },
+          {
+            "id": "stiff_morning_worse_rest",
+            "label": {
+              "en": "Stiff and painful in the morning; improves after moving around",
+              "ta": "காலையில் அதிக இறுக்கம் மற்றும் வலி; நடமாட நடமாட குறைகிறது",
+              "hi": "सुबह उठने पर बहुत अकड़न और दर्द; चलने-फिरने पर कम होता है"
+            },
+            "subLabel": {
+              "en": "Inflammatory spinal pattern or ankylosing spondylitis review",
+              "ta": "தண்டுவட அழற்சி அல்லது மூட்டு விறைப்பு",
+              "hi": "जोड़ों की सूजन या अकड़न संबंधी लक्षण"
+            },
+            "icon": "Clock",
+            "contextTag": "inflammatory_morning_stiffness"
+          },
+          {
+            "id": "constant_unrelieved_pain",
+            "label": {
+              "en": "Constant pain in all positions, even when lying completely flat",
+              "ta": "எந்த நிலையிலும் நிற்காத வலி, படுத்தாலும் குறையவில்லை",
+              "hi": "हर स्थिति में लगातार दर्द रहता है, लेटने पर भी आराम नहीं मिलता"
+            },
+            "subLabel": {
+              "en": "Requires clinical examination and diagnostic imaging",
+              "ta": "மருத்துவ பரிசோதனை மற்றும் ஸ்கேன் தேவை",
+              "hi": "डॉक्टर द्वारा विस्तृत जांच एवं एक्स-रे आवश्यक"
+            },
+            "icon": "AlertCircle",
+            "contextTag": "constant_back_pain"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "JOINTS_SPINE",
+    "matchKeywords": [
+      "joint pain",
+      "joint",
+      "knee pain",
+      "knee",
+      "shoulder pain",
+      "hip pain",
+      "wrist pain",
+      "ankle pain",
+      "arthritis",
+      "joint swelling",
+      "joint stiffness",
+      "மூட்டு வலி",
+      "மூட்டு",
+      "முழங்கால் வலி",
+      "முழங்கால்",
+      "தோள்பட்டை வலி",
+      "கணுக்கால் வலி",
+      "மூட்டு வீக்கம்",
+      "மூட்டு தேய்மானம்",
+      "जोड़ों का दर्द",
+      "जोड़",
+      "घुटने का दर्द",
+      "घुटना",
+      "कंधे का दर्द",
+      "टखने का दर्द",
+      "गठिया",
+      "जोड़ों में सूजन",
+      "जोड़ों की अकड़न"
+    ],
+    "questions": [
+      {
+        "id": "Q_JOINT_WHICH",
+        "questionNumber": 2,
+        "totalEstimatedQuestions": 4,
+        "category": "BODY_LOCATION",
+        "text": {
+          "en": "Which joint or joints are causing the discomfort?",
+          "ta": "எந்த மூட்டு அல்லது மூட்டுகளில் வலி அல்லது அசௌகரியம் உள்ளது?",
+          "hi": "किस जोड़ या जोड़ों में दर्द अथवा परेशानी है?"
+        },
+        "audioPromptText": {
+          "en": "Is it the knees, shoulders, hips, hands and fingers, or multiple joints?",
+          "ta": "முழங்கால், தோள்பட்டை, இடுப்பு மூட்டு, கைகள் அல்லது பல மூட்டுகளா?",
+          "hi": "क्या यह घुटने, कंधे, कूल्हे, हाथ-उंगलियां, या कई जोड़ों में है?"
+        },
+        "inputType": "CHOICE_CARDS",
+        "options": [
+          {
+            "id": "knees_bilateral_unilateral",
+            "label": {
+              "en": "Knee Joints (One or both knees)",
+              "ta": "முழங்கால் மூட்டுகள் (ஒரு கால் அல்லது இரு கால்கள்)",
+              "hi": "घुटने के जोड़ (एक या दोनों घुटने)"
+            },
+            "subLabel": {
+              "en": "Common in osteoarthritis, cartilage wear, or ligament strain",
+              "ta": "மூட்டு தேய்மானம் அல்லது தசைநார் பிடிப்பு",
+              "hi": "घुटने की हड्डियों का घिसना या लिगामेंट में खिंचाव"
+            },
+            "icon": "Activity",
+            "contextTag": "knee_joints"
+          },
+          {
+            "id": "shoulder_joint",
+            "label": {
+              "en": "Shoulder Joint (Difficulty lifting arm)",
+              "ta": "தோள்பட்டை மூட்டு (கையை மேலே தூக்க முடிவதில்லை)",
+              "hi": "कंधे का जोड़ (हाथ ऊपर उठाने में कठिनाई)"
+            },
+            "subLabel": {
+              "en": "Frozen shoulder, rotator cuff strain, or bursitis",
+              "ta": "தோள்பட்டை விறைப்பு அல்லது தசைநார் சுளுக்கு",
+              "hi": "कंधे की जकड़न या सूजन"
+            },
+            "icon": "User",
+            "contextTag": "shoulder_joint"
+          },
+          {
+            "id": "small_joints_hands_feet",
+            "label": {
+              "en": "Small Joints of Hands, Wrists, or Feet",
+              "ta": "கை விரல்கள், மணிக்கட்டு அல்லது கால் விரல் மூட்டுகள்",
+              "hi": "हाथों, कलाईयों या पैरों के छोटे जोड़"
+            },
+            "subLabel": {
+              "en": "Characteristic of rheumatoid, gout, or metabolic arthropathy",
+              "ta": "வாத மூட்டு வலி அல்லது யூரிக் அமில படிவு",
+              "hi": "गठिया या यूरिक एसिड जमाव का संकेत"
+            },
+            "icon": "Compass",
+            "contextTag": "small_joints"
+          },
+          {
+            "id": "multiple_joints_widespread",
+            "label": {
+              "en": "Multiple joints throughout the entire body",
+              "ta": "உடலில் உள்ள பல மூட்டுகளில் பரவலான வலி",
+              "hi": "पूरे शरीर के कई जोड़ों में एक साथ दर्द"
+            },
+            "subLabel": {
+              "en": "Systemic inflammatory arthritis or post-viral joint syndrome",
+              "ta": "பொதுவான வாத கோளாறு அல்லது காய்ச்சலுக்கு பிந்தைய மூட்டு வலி",
+              "hi": "शरीर में व्यापक सूजन या वायरल बुखार के बाद का दर्द"
+            },
+            "icon": "Activity",
+            "contextTag": "polyarticular_pain"
+          }
+        ]
+      },
+      {
+        "id": "Q_JOINT_SYMPTOMS",
+        "questionNumber": 3,
+        "totalEstimatedQuestions": 4,
+        "category": "CHARACTER",
+        "text": {
+          "en": "What other symptoms are present in the affected joint?",
+          "ta": "பாதிக்கப்பட்ட மூட்டில் வேறு என்ன அறிகுறிகள் உள்ளன?",
+          "hi": "प्रभावित जोड़ में अन्य क्या लक्षण मौजूद हैं?"
+        },
+        "audioPromptText": {
+          "en": "Is there swelling and warmth, morning stiffness, crackling noises, or difficulty bearing weight?",
+          "ta": "வீக்கம், வெதுவெதுப்பு, காலையில் விறைப்பு, அல்லது சத்தம் ஏற்படுகிறதா?",
+          "hi": "क्या सूजन व गर्माहट है, सुबह अकड़न रहती है, या चटकने की आवाज आती है?"
+        },
+        "inputType": "CHOICE_CARDS",
+        "options": [
+          {
+            "id": "swelling_warmth_redness",
+            "label": {
+              "en": "Visible swelling, warmth, and redness over the joint",
+              "ta": "மூட்டில் தென்படும் வீக்கம், சூடு மற்றும் சிவந்த தன்மை",
+              "hi": "जोड़ पर स्पष्ट सूजन, गर्माहट एवं लालिमा"
+            },
+            "subLabel": {
+              "en": "Indicates active joint effusion or acute inflammatory state",
+              "ta": "மூட்டில் நீர் கோர்த்தல் அல்லது தீவிர அழற்சி",
+              "hi": "जोड़ में पानी भरना या तीव्र सूजन का संकेत"
+            },
+            "icon": "AlertCircle",
+            "contextTag": "joint_effusion_swelling"
+          },
+          {
+            "id": "morning_stiffness_30mins",
+            "label": {
+              "en": "Prolonged morning stiffness lasting more than 30 minutes",
+              "ta": "காலையில் எழுந்தவுடன் 30 நிமிடங்களுக்கும் மேல் நீடிக்கும் விறைப்பு",
+              "hi": "सुबह उठने पर 30 मिनट से अधिक समय तक रहने वाली तेज अकड़न"
+            },
+            "subLabel": {
+              "en": "Key feature of autoimmune inflammatory joint disease",
+              "ta": "வாத மூட்டு அழற்சி அறிகுறி",
+              "hi": "गठिया रोग का प्रमुख लक्षण"
+            },
+            "icon": "Clock",
+            "contextTag": "morning_stiffness"
+          },
+          {
+            "id": "crepitus_grating_sound",
+            "label": {
+              "en": "Grating, clicking, or crackling noise during movement",
+              "ta": "அசையும் போது சடசடவென சத்தம் அல்லது உராய்வு உணர்வு",
+              "hi": "हिलने-डुलने पर जोड़ में कट-कट की आवाज या रगड़न महसूस होना"
+            },
+            "subLabel": {
+              "en": "Cartilage friction and joint degenerative changes",
+              "ta": "மூட்டு குருத்தெலும்பு தேய்மானம்",
+              "hi": "हड्डियों के बीच की चिकनाई कम होने का संकेत"
+            },
+            "icon": "Activity",
+            "contextTag": "joint_crepitus"
+          },
+          {
+            "id": "pain_only_on_walking",
+            "label": {
+              "en": "Pain occurs only when walking, stair climbing, or weight bearing",
+              "ta": "நடக்கும் போது, படிக்கட்டு ஏறும் போது அல்லது பாரம் சுமக்கும் போது மட்டும் வலி",
+              "hi": "केवल चलने, सीढ़ियां चढ़ने या वजन डालने पर ही दर्द होता है"
+            },
+            "subLabel": {
+              "en": "Mechanical joint load pain; completely comfortable at rest",
+              "ta": "ஓய்வில் இருக்கும் போது எந்த வலியும் இல்லை",
+              "hi": "आराम करने पर बिल्कुल दर्द नहीं होता"
+            },
+            "icon": "Check",
+            "contextTag": "mechanical_weight_bearing"
+          }
+        ]
+      },
+      {
+        "id": "Q_JOINT_ONSET",
+        "questionNumber": 4,
+        "totalEstimatedQuestions": 4,
+        "category": "TRIGGERS",
+        "text": {
+          "en": "How did this joint issue first start?",
+          "ta": "இந்த மூட்டுப் பிரச்சனை முதன்முதலில் எவ்வாறு தொடங்கியது?",
+          "hi": "यह जोड़ों की समस्या पहली बार कैसे शुरू हुई थी?"
+        },
+        "audioPromptText": {
+          "en": "Did it start after an injury or sports twist, gradually over years, or suddenly overnight?",
+          "ta": "விபத்து அல்லது சுளுக்கால் வந்ததா, பல மாதங்களாக வந்ததா, அல்லது திடீரென்றா?",
+          "hi": "क्या किसी चोट या मोच से शुरू हुआ, वर्षों में धीरे-धीरे बढ़ा, या अचानक हुआ?"
+        },
+        "inputType": "CHOICE_CARDS",
+        "options": [
+          {
+            "id": "injury_twist_sprain",
+            "label": {
+              "en": "Following a twist, sports injury, fall, or sudden strain",
+              "ta": "விளையாட்டு சுளுக்கு, சறுக்கி விழுந்தது அல்லது திடீர் காயத்திற்குப் பின்",
+              "hi": "खेलकूद की चोट, मुड़ने, फिसलकर गिरने या मोच के बाद"
+            },
+            "subLabel": {
+              "en": "Ligamentous tear, meniscus injury, or acute sprain",
+              "ta": "தசைநார் கிழிவு அல்லது உள் சுளுக்கு",
+              "hi": "लिगामेंट या नस में खिंचाव की संभावना"
+            },
+            "icon": "AlertCircle",
+            "contextTag": "traumatic_joint_onset"
+          },
+          {
+            "id": "gradual_age_related",
+            "label": {
+              "en": "Gradually developed over many months or years with aging",
+              "ta": "வயது மூப்பினால் பல மாதங்கள் அல்லது வருடங்களாக படிப்படியாக அதிகரித்தது",
+              "hi": "उम्र बढ़ने के साथ कई महीनों या वर्षों में धीरे-धीरे विकसित हुआ"
+            },
+            "subLabel": {
+              "en": "Degenerative joint disease / Osteoarthritis presentation",
+              "ta": "இயற்கையான மூட்டு தேய்மானம்",
+              "hi": "उम्र संबंधी हड्डियों का स्वाभाविक घिसाव"
+            },
+            "icon": "Clock",
+            "contextTag": "degenerative_wear"
+          },
+          {
+            "id": "sudden_overnight_flare",
+            "label": {
+              "en": "Sudden severe attack overnight without any prior injury",
+              "ta": "எந்த காயமும் இல்லாமல் ஒரே இரவில் திடீரென தாங்க முடியாத வலி ஏற்பட்டது",
+              "hi": "बिना किसी चोट के रातभर में अचानक असहनीय तेज दर्द हुआ"
+            },
+            "subLabel": {
+              "en": "Crystal arthropathy / Acute gouty flare pattern",
+              "ta": "கவுட் அல்லது திடீர் யூரிக் அமில பாதிப்பு",
+              "hi": "गाउट अथवा तीव्र यूरिक एसिड अटैक का संकेत"
+            },
+            "icon": "Activity",
+            "contextTag": "crystal_gout_onset"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "name": "aihc-patient-casetaking",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "start": "python start.py",
+    "dev:all": "python start.py",
+    "dev": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "preview": "npm --prefix frontend run preview",
+    "backend": "python backend/run.py"
+  }
+}

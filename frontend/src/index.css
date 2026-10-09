@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Inter', 'Noto Sans Tamil', 'Noto Sans Devanagari', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+}
+
+/* Accessibility Scaling */
+html.text-scale-large {
+  font-size: 115%;
+}
+
+html.text-scale-xlarge {
+  font-size: 130%;
+}
+
+/* High Contrast Mode */
+html.contrast-more {
+  filter: contrast(115%);
+}
+
+html.contrast-more button,
+html.contrast-more input,
+html.contrast-more select,
+html.contrast-more textarea {
+  border-width: 2px !important;
+  border-color: #0f172a !important;
+}
+
+/* Touch-friendly defaults */
+button, input, select, textarea {
+  touch-action: manipulation;
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.active\:scale-98:active {
+  transform: scale(0.98);
+}
